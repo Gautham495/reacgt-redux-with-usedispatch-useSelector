@@ -4,7 +4,7 @@ import Someaction from "./action"
 const ButtonClick = () =>{
 
 const dispatch =useDispatch();
-const data = useSelector(state => state.your_reducer)
+const data = useSelector(state => state.counter)
 
 const click = () =>{
 alert(data)
