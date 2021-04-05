@@ -1,4 +1,7 @@
 import {combineReducers} from 'redux';
-import {counter} from './Reducers/Reducers'
+import {counter,product} from './Reducers/Reducers'
 
-export default combineReducers({counter});
+export default combineReducers({
+    counter :counter,
+    product:product
+         });
