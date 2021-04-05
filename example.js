@@ -1,5 +1,5 @@
 import {useDispatch,useSelector} from 'react-redux'
-import  {increment} from "./Action"
+import  {increment} from "./Redux/Actions/Action"
 
 const ButtonClick = () =>{
 
@@ -11,6 +11,9 @@ dispatch(increment)
 }
 
 return (
+  <div>
+  {data}
 <button onClick={click}>Click me!</button>
+  </div>
 )
 }
