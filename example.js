@@ -1,5 +1,5 @@
 import {useDispatch,useSelector} from 'react-redux'
-import Someaction from "./action"
+import  {increment} from "./Action"
 
 const ButtonClick = () =>{
 
@@ -7,7 +7,7 @@ const dispatch =useDispatch();
 const data = useSelector(state => state.counter)
 
 const click = () =>{
-alert(data)
+dispatch(increment)
 }
 
 return (
